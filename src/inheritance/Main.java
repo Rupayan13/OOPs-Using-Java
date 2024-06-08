@@ -20,6 +20,7 @@ public class Main {
 		BoxWeight box2 = new BoxWeight(2, 3, 4, 8);
 		System.out.println(box2.h + " " + box2.weight);
 
+		//Dynamic method dispatch
 		Box box3 = new BoxWeight(2, 3, 4, 8);
 		System.out.println(box3.w);
 //		System.out.println(box3.weight); //we can't get box weight because it is the instance of the parent class, though the variable is initialized by the the child constructor.
@@ -31,7 +32,7 @@ public class Main {
 		// but here, when the obj itself is of type parent class, how will you call the
 		// constructor of child class
 		// this is why error
-//        BoxWeight box4 = new Box(2, 3, 4); // It is not applicable anymore, because we can assign the child constructor for referring the parent class object, but vice versa is not possible
+//        BoxWeight box4 = new Box(2, 3, 4); // It is not applicable anymore, because we can assign the child constructor(child class object) for referring the parent class instance, but vice versa is not possible
 //        System.out.println(box4);
 
 		BoxWeight box = new BoxWeight();
